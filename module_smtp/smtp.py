@@ -32,3 +32,5 @@ with smtplib.SMTP(host='localhost', port=2525) as smtp_server:
     # smtp_server.login('username', 'password')
     smtp_server.send_message(my_email)
     print("Email was sent!")
+
+# сменил репозиторий
