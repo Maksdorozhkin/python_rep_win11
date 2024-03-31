@@ -9,3 +9,5 @@ def disemvowel(string_):
 
 
 print(disemvowel("This website is for losers LOL"))
+
+# проверка кодировки
