@@ -132,31 +132,31 @@
 #     print("No 'x' in there.")
 
 # генерируем числовые последовательности с помощью функции range()
-for x in range(0, 3):
-    print(x)
+# for x in range(0, 3):
+#     print(x)
 
-print(list(range(0, 3)))
+# print(list(range(0, 3)))
 
-for x in range(2, -1, -1):
-    print(x)
+# for x in range(2, -1, -1):
+#     print(x)
 
-print(list(range(2, -1, -1)))
-print(list(range(0, 11, 2)))
+# print(list(range(2, -1, -1)))
+# print(list(range(0, 11, 2)))
 
 
-print(list(range(3, -1, -1)))
+# print(list(range(3, -1, -1)))
 
 # задача 6.2 не понял условие
-# guess_me = 7
-# number = 1
-# start = int(input("Введи число: "))
-# while start < guess_me:
-#     print("Too low")
-#     number = number + 1
-#     if start == guess_me:
-#         print("found it")
-#         break
-#     if number > guess_me:
-#         print("oops")
-#         number += 1
-#         break
+guess_me = 7
+number = 1
+start = int(input("Введи число: "))
+while start < guess_me:
+    print("Too low")
+    number = number + 1
+    if start == guess_me:
+        print("found it")
+        break
+    if number > guess_me:
+        print("oops")
+        number += 1
+        break
