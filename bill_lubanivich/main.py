@@ -91,20 +91,42 @@
 #     print(a)
 
 # пример со строками используем срезы строк и цикл while
-s = 'privet1~'
+# s = 'privet1~'
 # while len(s) > 0:
 #     print(s[0], s[1:])
 #     s = s[1:]
 
-while len(s) > 0:
-    # print(s[0],)
-    bukva = s[0]
-    if bukva >= 'a' and bukva <= 'z':
-        print(bukva, "small")
-    elif bukva >= 'A' and bukva <= 'Z':
-        print(bukva, "Big")
-    elif bukva.isdigit():
-        print(bukva, "Цифра")
-    else:
-        print(bukva, "Знак")
-    s = s[1:]
+# while len(s) > 0:
+#     # print(s[0],)
+#     bukva = s[0]
+#     if bukva >= 'a' and bukva <= 'z':
+#         print(bukva, "small")
+#     elif bukva >= 'A' and bukva <= 'Z':
+#         print(bukva, "Big")
+#     elif bukva.isdigit():
+#         print(bukva, "Цифра")
+#     else:
+#         print(bukva, "Знак")
+#     s = s[1:]
+
+# цикл for
+word = 'thud'
+for letter in word:
+    print(letter)
+
+# break
+
+for letter in word:
+    if letter == 'u':
+        break
+    print(letter)
+# continue пропускает итерации
+
+# else
+for letter in word:
+    if letter == 'x':
+        print("Eek! An 'x'!")
+        break
+    print(letter)
+else:
+    print("No 'x' in there.")
