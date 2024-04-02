@@ -65,15 +65,46 @@
 
 # выводим числа в порядке убывания
 
-i = 20
-while i >= 1:
-    print(i)
-    i = (i - 1)
+# i = 20
+# while i >= 1:
+#     print(i)
+#     i = (i - 1)
 
 
 # проверяет бесконечно введенный пароль
-inp = input("password: ")
-password = 'rdf34dsg'
-while inp != password:
-    print("Неправильный пароль!: ")
-    inp = input("password: ")
+# inp = input("password: ")
+# password = 'rdf34dsg'
+# count = 0
+# while inp != password:
+#     count += 1
+#     print("Неправильный пароль!: ")
+#     inp = input("password: ")
+# print("Вы потратили", count, "попыток!")
+
+
+# удаляем все 3 из списка
+# a = [1, 2, 3, 4, 5] * 5
+# print(a)
+
+# while 4 in a:
+#     a.remove(4)
+#     print(a)
+
+# пример со строками используем срезы строк и цикл while
+s = 'privet1~'
+# while len(s) > 0:
+#     print(s[0], s[1:])
+#     s = s[1:]
+
+while len(s) > 0:
+    # print(s[0],)
+    bukva = s[0]
+    if bukva >= 'a' and bukva <= 'z':
+        print(bukva, "small")
+    elif bukva >= 'A' and bukva <= 'Z':
+        print(bukva, "Big")
+    elif bukva.isdigit():
+        print(bukva, "Цифра")
+    else:
+        print(bukva, "Знак")
+    s = s[1:]
