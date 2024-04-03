@@ -1,3 +1,5 @@
+# https://github.com/madscheme/introducing-python
+
 # оператор присваивания (морж) :=
 
 # tweet_limit = 280
@@ -143,20 +145,33 @@
 # print(list(range(2, -1, -1)))
 # print(list(range(0, 11, 2)))
 
-
+# задача 6.1
 # print(list(range(3, -1, -1)))
 
 # задача 6.2 не понял условие
-guess_me = 7
-number = 1
-start = int(input("Введи число: "))
-while start < guess_me:
-    print("Too low")
-    number = number + 1
-    if start == guess_me:
+# guess_me = 7
+# number = 1
+# start = int(input("Введи число: "))
+# while start < guess_me:
+#     print("Too low")
+#     number = 1
+#     # number = number + 1
+#     if start == guess_me:
+#         print("found it")
+#         break
+#     elif number > guess_me:
+#         print("oops")
+#         number += 1
+#         break
+
+
+# task 6.3
+guess_me = 5
+for number in range(10):
+    if number + 1 < guess_me:
+        print("too low")
+    elif number + 1 == guess_me:
         print("found it")
-        break
-    if number > guess_me:
-        print("oops")
-        number += 1
+    else:
+        print("oops!")
         break
