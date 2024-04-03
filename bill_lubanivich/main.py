@@ -153,9 +153,8 @@
 # number = 1
 # start = int(input("Введи число: "))
 # while start < guess_me:
+#     number = number + 1
 #     print("Too low")
-#     number = 1
-#     # number = number + 1
 #     if start == guess_me:
 #         print("found it")
 #         break
@@ -175,3 +174,48 @@ for number in range(10):
     else:
         print("oops!")
         break
+
+
+# списки картежи
+# создаем список используя функцию split()
+
+talk_like_a_pirate_day = '8/08/1980'
+print(talk_like_a_pirate_day.split('/'))
+
+splitme = 'a/b//c/d//e'
+print(splitme.split('/'))
+print(splitme.split('//'))
+
+# извлекаем элементы с использованием разделения
+marxes = ['Groucho', 'Chico', 'Harpo']
+
+print(marxes[0:2])
+print(marxes[::2])
+print(marxes[::-2])
+print(marxes[::-1])  # инвертируем список
+
+print(marxes)
+marxes.reverse()
+print(marxes)
+
+marxes.append('Zeppo')
+print(marxes)
+
+marxes.insert(1, "Gummo")
+print(marxes)
+
+others = ['Kari']
+marxes.extend(others)
+print(marxes)
+print("")
+marxes.append(others)
+print(marxes)
+print("")
+
+marxes[2] = "Wanda"
+print(marxes)
+
+
+numbers = [1, 2, 3, 4]
+numbers[1:3] = [8, 9]
+print(numbers)
