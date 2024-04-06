@@ -39,3 +39,31 @@ def min_int(a, b):
 
 
 min_int(10, 5)
+
+# рекурсия функция возвращает саму себя
+
+
+def flatten(lol):
+    for item in lol:
+        if isinstance(item, list):
+            for subitem in flatten(item):
+                yield subitem
+        else:
+            yield item
+
+
+lol = [1, 2, [3, 4, 5], [6, [7, 8, 9], []]]
+print(list(flatten(lol)))
+
+# более простой способ
+
+
+def flattens(lol):
+    for item in lol:
+        if isinstance(item, list):
+            yield from flattens(item)
+        else:
+            yield item
+
+
+print(list(flattens(lol)))
