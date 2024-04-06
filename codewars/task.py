@@ -19,3 +19,15 @@ def asd(string):
 
 
 print(to_jaden_case("How can mirrors be real if our eyes aren't real"))
+
+
+# Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+def even_or_odd(number):
+    if not number % 2 == 1:
+        return 'Even'
+    else:
+        return "Odd"
+
+
+even_or_odd(3)
