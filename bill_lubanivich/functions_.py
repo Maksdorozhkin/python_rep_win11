@@ -141,3 +141,26 @@ print(edit_story, enliven)
 
 # передаем lambda функцию как аргумент функции
 edit_story(stairs, lambda word: word.capitalize() + '!')
+
+# функции генераторы (вместо return передается yield)
+print('')
+
+
+def my_range(first=0, last=10, step=1):
+    number = first
+    while number < last:
+        yield number
+        number += step
+
+
+ranger = my_range(2, 200, 50)
+
+for x in ranger:
+    print(x)
+
+print('')
+
+# включения генераторов
+genobj = (pair for pair in zip(['a', 'b'], ['1', '2']))
+for t in genobj:
+    print(t)
