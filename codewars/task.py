@@ -53,3 +53,20 @@ def check_for_factor(base, factor):
 
 def check_for_factor(base, factor):
     return base % factor == 0
+
+# написать функцию котора принимает два числа и возвращает массив всех целых чисел между входными параметрами, включая их.
+
+
+def between(a, b):
+    my_list = []
+    for j in range(a, b+1):
+        my_list.append(j)
+    return my_list
+
+
+print(between(1, 4))
+print(between(-2, 2))
+
+
+def between(a, b):
+    return list(range(a, b+1))
