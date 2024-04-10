@@ -70,3 +70,11 @@ print(between(-2, 2))
 
 def between(a, b):
     return list(range(a, b+1))
+
+
+# Создайте функцию для терминальной игры, которая принимает текущую позицию героя и бросок (1-6) и возвращает новую позицию.
+def move(position, roll):
+    return position + roll * 2
+
+
+print(move(0, 4))
