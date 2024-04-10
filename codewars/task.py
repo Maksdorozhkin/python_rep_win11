@@ -40,3 +40,16 @@ def find_smallest_int(arr):
 
 
 print(find_smallest_int([78, 56, 232, 12, 11, 43]))
+
+# выяснить является ли число фактором другого числа
+
+
+def check_for_factor(base, factor):
+    if base % factor == 0:
+        return True
+    else:
+        return False
+
+
+def check_for_factor(base, factor):
+    return base % factor == 0
