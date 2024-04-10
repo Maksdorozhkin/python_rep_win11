@@ -31,3 +31,12 @@ def even_or_odd(number):
 
 
 even_or_odd(3)
+
+
+# найти наименьшее число в массиве
+def find_smallest_int(arr):
+    a = arr[:]
+    return min(a)
+
+
+print(find_smallest_int([78, 56, 232, 12, 11, 43]))
