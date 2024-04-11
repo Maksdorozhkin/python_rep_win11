@@ -78,3 +78,11 @@ def move(position, roll):
 
 
 print(move(0, 4))
+
+
+# Fibonacci
+
+a, b = 0, 1
+while a < 100:
+    print(a)
+    a, b = b, a+b
