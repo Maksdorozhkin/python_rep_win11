@@ -107,7 +107,7 @@ match point:
         raise ValueError("Not a point")
 
 
-class Point:
+class Point():
     def __init__(self, x, y) -> None:
         self.x = x
         self.y = y
@@ -125,3 +125,7 @@ def where_is(point):
             print("Somewhere else")
         case _:
             raise ValueError("Not a point")
+
+
+my_point = Point(0, 0)
+where_is(my_point)
